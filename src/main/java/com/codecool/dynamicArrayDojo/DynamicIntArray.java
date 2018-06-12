@@ -34,6 +34,9 @@ public class DynamicIntArray {
         this.arr = tempArr;
     }
 
+    public void remove_LastItem() {
+        this.arr = Arrays.copyOf(this.arr, this.arr.length-1);
+    }
 
 
     @Override
